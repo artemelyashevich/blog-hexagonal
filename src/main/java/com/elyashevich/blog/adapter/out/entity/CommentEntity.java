@@ -1,4 +1,4 @@
-package com.elyashevich.blog.adapter.out.mongo.entity;
+package com.elyashevich.blog.adapter.out.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;

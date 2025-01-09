@@ -1,4 +1,4 @@
-package com.elyashevich.blog.domain;
+package com.elyashevich.blog.core.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

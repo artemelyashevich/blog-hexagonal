@@ -1,6 +1,6 @@
-package com.elyashevich.blog.domain;
+package com.elyashevich.blog.core.domain;
 
-import com.elyashevich.blog.adapter.out.mongo.entity.UserEntity;
+import com.elyashevich.blog.adapter.out.entity.RoleEntity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
@@ -10,6 +10,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 import java.time.LocalDateTime;
+import java.util.Set;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -17,14 +18,18 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @Builder
-@ToString
-public class Comment {
+@ToString(exclude = "password")
+public class User {
 
     private String id;
 
-    private String content;
+    private String username;
 
-    private UserEntity creator;
+    private String email;
+
+    private String password;
+
+    private Set<RoleEntity> roles;
 
     private LocalDateTime createdAt;
 

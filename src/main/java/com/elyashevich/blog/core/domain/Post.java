@@ -1,7 +1,7 @@
-package com.elyashevich.blog.domain;
+package com.elyashevich.blog.core.domain;
 
-import com.elyashevich.blog.adapter.out.mongo.entity.CommentEntity;
-import com.elyashevich.blog.adapter.out.mongo.entity.UserEntity;
+import com.elyashevich.blog.adapter.out.entity.CommentEntity;
+import com.elyashevich.blog.adapter.out.entity.UserEntity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
